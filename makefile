@@ -5,8 +5,8 @@ CFLAGS=-Wall -Wextra -pedantic -std=c99 -fwrapv
 all: vm
 
 doc: doc.tgz
-	tar zcf $<
+	tar zxf $<
 
 clean:
-	rm -fv *.a *.o vm
+	git clean -dfx
 

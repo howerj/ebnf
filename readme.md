@@ -81,3 +81,5 @@ From <https://en.wikipedia.org/wiki/Extended_Backus%E2%80%93Naur_form>, the
 
 [doc.tgz]: doc.tgz
 [EBNF]: https://en.wikipedia.org/wiki/Extended_Backus%E2%80%93Naur_form
+
+<style type="text/css">body{margin:40px auto;max-width:850px;line-height:1.6;font-size:16px;color:#444;padding:0 10px}h1,h2,h3{line-height:1.2}table {width: 100%; border-collapse: collapse;}table, th, td{border: 1px solid black;}code { color: #091992; } </style>
