@@ -8,6 +8,13 @@
  *  @todo Add in other parts of the EBNF standard, as well as
  *        escape characters, character classes and white-space
  *  @todo Allow parsing of binary files
+ *  @todo Clean up the parser, or remove it after boot-strapping the
+ *  system.
+ *  @todo Allow for various extensions to the grammar, which would include:
+ *  - turning on/off options for a default lexer (such as whitespace
+ *  processing)
+ *  - assembling code directly into the virtual machine
+ *  - The grammar for this would be '"?" directive "?"'
  *  
  *  The hard coded parser and lexer should be disposed of once the VM works,
  *  a lot of code will be duplicated until this happens.  **/
@@ -554,9 +561,9 @@ static int code(vm_t *cs, node *n) {
 	case REPETITION: /*WHILE{ EXPECT RHS }*/
 		break;
 	case FAIL: 
-		break;
+		return -1;
 	case LAST:
-		break;
+		return 0;
 	default:
 		fprintf(stderr, "code generation error\n");
 		return -1;
@@ -582,7 +589,7 @@ void destroy_code(vm_t *cs) {
 
 /******************************* EBNF VM **************************************/
 
-/*The VM is passed a vm_t and a special VM lexer*/
+/* TODO: Separate this out into a different file */
 
 int vm(vm_t *v, node *n) {
 	assert(v);
