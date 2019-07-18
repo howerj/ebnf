@@ -2,3 +2,5 @@ doc
 vm
 *.a
 *.o
+*.bnf.c
+*.bnf.h

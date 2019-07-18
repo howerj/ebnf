@@ -44,6 +44,8 @@
 * <https://en.wikipedia.org/wiki/PL/0>
 * <https://en.wikipedia.org/wiki/P-code_machine>
 * <https://en.wikipedia.org/wiki/Recursive_descent_parser>
+* <https://rosettacode.org/wiki/Parse_EBNF>
+* <http://www.iro.umontreal.ca/~felipe/IFT2030-Automne2002/Complements/tinyc.c>
 
 ## Appendix
 
